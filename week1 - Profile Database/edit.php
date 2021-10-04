@@ -55,7 +55,7 @@ $summary = htmlentities($data['summary']);
 ?>
 
 <html>
-    <head><title>Marwan Mohamed</title></head>
+    <head><title></title></head>
     <body>
        <h1>Edit</h1>
        <?php

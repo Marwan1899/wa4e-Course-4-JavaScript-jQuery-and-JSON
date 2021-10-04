@@ -34,7 +34,7 @@ $lname = htmlentities($row['last_name']);
 ?>
 
 <html>
-    <head><title>Marwan Mohamed</title></head>
+    <head><title></title></head>
     <body>
         <h1>Deleteing Profile</h1>
         <div>

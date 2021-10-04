@@ -45,7 +45,7 @@ if(isset($_POST['add'])){
 
 
 <html>
-    <head><title>Marwan Mohamed</title></head>
+    <head><title></title></head>
     <body>
        <h1>Adding Profile for <?php echo $_SESSION['name']; ?></h1>
         <div>

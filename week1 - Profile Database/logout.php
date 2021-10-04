@@ -7,5 +7,5 @@ return;
 
 
 <html>
-    <head><title>Marwan Mohamed</title></head>
+    <head><title></title></head>
 </html>

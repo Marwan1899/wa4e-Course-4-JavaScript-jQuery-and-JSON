@@ -41,11 +41,8 @@ $salt = 'XyZzy12*_';
 
 
 <html>
-    <head><title>Marwan Mohamed</title></head>
+    <head><title></title></head>
     <body>
-        <div>
-            
-        </div>
         <h1>Please Login</h1>
         <?php
         if(isset($_SESSION['error'])){

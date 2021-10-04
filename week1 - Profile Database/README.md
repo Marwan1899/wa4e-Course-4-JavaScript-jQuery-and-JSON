@@ -1,5 +1,9 @@
 You will need to have a users table as follows:
 
+CREATE DATABASE misc;
+GRANT ALL ON misc.* TO 'fred'@'localhost' IDENTIFIED BY 'zap';
+GRANT ALL ON misc.* TO 'fred'@'127.0.0.1' IDENTIFIED BY 'zap';
+
 CREATE TABLE users (
    user_id INTEGER NOT NULL AUTO_INCREMENT,
    name VARCHAR(128),

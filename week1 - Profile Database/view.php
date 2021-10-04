@@ -24,7 +24,7 @@ $summary = htmlentities($row['summary']);
 
 
 <html>
-    <head><title>Marwan Mohamed</title></head>
+    <head><title></title></head>
     <body>
     <h1>Profile information</h1>
     <div>

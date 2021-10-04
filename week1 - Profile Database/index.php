@@ -9,9 +9,9 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 <html>
-    <head><title>Marwan Mohamed</title></head>
+    <head><title></title></head>
     <body>
-        <h1>Marwan Mohamed Resume Builder</h1>
+        <h1>Resume Builder</h1>
             <div>
                 <?php
                     if(isset($_SESSION['success'])){
