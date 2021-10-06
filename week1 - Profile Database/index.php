@@ -2,9 +2,11 @@
 require_once "pdo.php";
 session_start();
 
-$stmt = $pdo->query('SELECT profile_id,first_name,last_name,headline FROM profile;');
+if(isset($_SESSION['user_id'])){
+$stmt = $pdo->prepare('SELECT profile_id,first_name,last_name,headline FROM profile WHERE user_id=:uid;');
+$stmt->execute(array(':uid'=>$_SESSION['user_id']));
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+}
 ?>
 
 
@@ -23,6 +25,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div>
                 <?php
                     if (isset($_SESSION['name'])){
+                        echo('<p>Logged in as <b>'.$_SESSION['name'].'</b></p>');
                         if(sizeof($rows) >= 1){
                             echo "<table border='1'><thead><tr>";
                             echo "<th>Name</th>";
@@ -42,6 +45,7 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                         echo('<p><a href="logout.php">Logout</a></p>');
                         echo('<p><a href="add.php">Add New Entry</a></p>');
+                        echo('<p><a href="admin.php">Add an Admin Account</a></p>');
                     }
                     else{
                         echo('<p><a href="login.php">Please log in</a></p>');
